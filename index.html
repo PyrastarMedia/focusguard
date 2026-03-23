@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusGuard | Your Digital Sanctuary</title>
+    <style>
+        :root { --bg: #12150f; --gold: #c5a86a; --leaf: #3a4a38; --text: #d2cfc0; }
+        body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; margin: 0; line-height: 1.6; }
+        
+        /* Smooth Entrance */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; text-align: center; animation: fadeIn 1s ease-out; }
+        
+        header { padding: 60px 0; }
+        .logo { font-size: 3rem; color: var(--gold); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; }
+        .tagline { font-style: italic; color: var(--leaf); font-size: 1.2rem; }
+        
+        .hero-box { 
+            background: rgba(197, 168, 106, 0.03); 
+            border: 1px solid rgba(197, 168, 106, 0.1); 
+            padding: 40px; border-radius: 24px; margin: 40px 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--bg);
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        .cta-button:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(197, 168, 106, 0.4); }
+
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 60px; }
+        .feature-card { padding: 20px; border-bottom: 1px solid var(--leaf); }
+        .feature-card h3 { color: var(--gold); }
+
+        footer { margin-top: 100px; font-size: 0.8rem; color: var(--leaf); letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo">✦ FocusGuard</div>
+        <div class="tagline">Transform your work into a ritual.</div>
+    </header>
+
+    <section class="hero-box">
+        <h1>Silence the Noise. Reclaim your Mind.</h1>
+        <p>FocusGuard is a sophisticated Chrome extension designed for those who seek deep work. No jarring alarms—just a beautiful, aesthetic guard that protects your attention.</p>
+        <a href="YOUR_CHROME_STORE_URL_HERE" class="cta-button">Add to Chrome — It's Free</a>
+    </section>
+
+    <div class="features">
+        <div class="feature-card">
+            <h3>The Golden Dial</h3>
+            <p>Set focus sessions with a fluid, precision arc timer inspired by minimalist horology.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Intention Setting</h3>
+            <p>Assign a purpose to your silence. Name your task to give your focus a clear destination.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Aesthetic Blocking</h3>
+            <p>A gentle, full-screen guard covers distractions when your time is up, encouraging intentional rest.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 FOCUSGUARD | PRIVACY FIRST | NO TRACKING
+    </footer>
+</div>
+
+</body>
+</html>
